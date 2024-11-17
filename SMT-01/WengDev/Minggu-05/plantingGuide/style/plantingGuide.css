@@ -1,0 +1,19 @@
+body {
+    background-image: url("../src/header.gif");    
+    background-repeat: repeat-x;
+    
+}
+
+h1{
+    font-family: pasifico;
+    color: white;
+}
+
+main {
+    padding: 10px;
+}
+
+@font-face {
+    font-family: pasifico;
+    src: url("../font/Pacifico.ttf");
+}

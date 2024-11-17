@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Form</title>
+</head>
+<body>
+    
+    <form action="#">
+
+        <h1>Register for My Planet Sports</h1>
+
+        <fieldset>
+
+            <legend>Personal details</legend>
+
+            <label for="firstname">First Name</label><br>
+            <input required placeholder="First name only" type="text" name="firstname" id="firstname" autofocus>
+
+            <br><br>
+
+            <label for="lastname">Last Name</label><br>
+            <input required placeholder="First name only" type="text" name="lastname" id="lastname">
+
+            <br><br>
+
+            <label for="date">Date of Birth</label><br>
+            <input required type="date" id="date" >
+
+            <br><br>
+
+            <label for="email">Email</label><br>
+            <input required type="email" name="email" id="email" placeholder="example@domain.com">
+
+            <br><br>
+
+            <label for="shoesize">Shoesize</label><br>
+            <input type="number" name="shoesize" id="shoesize">
+
+            <br><br>
+
+            <label for="flyingskill">Flying Skill level (1 low - 100 high)</label><br>
+            <input type="range" name="flyingskill" id="flyingskill" min="1" max="100" oninput="flyingskilloutput.value=flyingskill.value">
+            <output name="flyingskilloutput" for="flyingskill">50</output>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Billing Adress</legend>
+
+            <label for="adress">Adress</label><br>
+            <textarea name="adress" id="adress" required rows="7"></textarea>
+
+            <br><br>
+
+            <label for="postcode">Postcode</label><br>
+            <input type="text" name="postcode" id="postcode" required>
+
+            <br><br>
+
+            
+            <label for="country">Country</label><br>
+            <input type="text" name="country" id="country" required>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Card details</legend>
+
+                <fieldset>
+
+                    <legend>Card Type</legend>
+
+                    <input type="radio" name="radio" id="radio1">
+                    <label for="radio1">VISA</label>
+
+                    
+                    <input type="radio" name="radio" id="radio2">
+                    <label for="radio2">Mastercard</label>
+
+                    
+                    <input type="radio" name="radio" id="radio3">
+                    <label for="radio3">Amex</label>
+
+                </fieldset>
+
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Name as it appear">
+
+                <br><br>
+
+                <label for="cardnumber">Card number</label><br>
+                <input type="number" name="cardnumber" id="cardnumber" max="999999">
+
+                <br><br>
+
+                <label for="Securitycode">Security Code</label><br>
+                <input type="number" name="Securitycode" id="Securitycode" max="999999">
+
+                <br><br>
+
+                <label for="expirydate">Expiry Date</label><br>
+                <input type="month" name="expirydate" id="expirydate" required>
+
+        </fieldset>
+
+        <fieldset>
+
+            <input type="submit" name="submit" id="submit" value="Place Order">
+
+        </fieldset>
+
+    </form>
+
+    <footer>
+        <p>Tombol home</p>
+        <a href="../home.html"><img src="https://static.vecteezy.com/system/resources/previews/000/366/438/original/home-vector-icon.jpg" alt="home" width="150"></a>
+    </footer>
+
+</body>
+</html>

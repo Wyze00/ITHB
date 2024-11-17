@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(66, 66, 66);
+    height: 1000px;
+}
+
+form {
+    width: 600px;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+form .header {
+    text-align: center;
+    color: rgb(39, 167, 252);
+    margin-bottom: 30px;
+    font-family: 'Sofia';
+}
+
+form .input {
+    width: 70%;
+    margin-left: 10%;
+}
+
+form .input input[type="text"], input[type="email"], textarea, select {
+    width: 80%;
+    padding: 10px;
+}
+
+form input[type="button"] {
+    background-color: rgb(16, 73, 158);
+    color: white;
+    padding: 10px 100px;
+    border: none;
+    margin-top: 25px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+form .btn {
+    margin: auto;
+
+    span {
+        display: inline-block;
+        width: 34px;
+        height: 32px;
+        background-color: rgb(16, 73, 158);
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .span1 {
+        top: 12px;
+        left: 28px;
+    }
+
+    .span2 {
+        top: 12px;
+        right: 28px;
+    }
+}
+
+form .input .container {
+    display: flex;
+
+    label {
+        width: 25%;
+        
+        align-self: center;
+    }
+}

@@ -1,0 +1,17 @@
+
+footer {
+    background-color: #444;
+    text-align: center;
+    position: fixed;    
+    bottom: 0;
+    width: 100%;
+
+    p {
+        font-size: small;
+        color: white;
+    }
+} 
+
+p {
+    font-style: normal;
+}

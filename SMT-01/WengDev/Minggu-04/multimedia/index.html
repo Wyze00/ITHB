@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <link rel="icon" href="https://th.bing.com/th/id/R.4cf472a67c13da816ff09f58fab048b1?rik=p9gJWBH1NBKeLA&riu=http%3a%2f%2fdownload.ithb.ac.id%2flogo.gif&ehk=QNgVEvIPoPy5onsltRgWVw6srCfsiPpBpHr4%2btb7GlM%3d&risl=&pid=ImgRaw&r=0">
+</head>
+<style>
+    body {
+        font-family: sans-serif;
+        color: white;
+        background-color: rgb(90, 90, 90);
+    }
+
+    fieldset legend {
+        text-align: center;
+
+    }
+
+    div, header {
+        margin-bottom: 70px;
+    }
+
+    a {
+        color: rgb(255, 215, 215);
+    }
+
+    li {
+        display: inline;
+    }
+
+</style>
+<body>
+
+    <header>
+
+        <h1>MULTIMEDIA</h1>
+
+        <img src="https://th.bing.com/th/id/R.4cf472a67c13da816ff09f58fab048b1?rik=p9gJWBH1NBKeLA&riu=http%3a%2f%2fdownload.ithb.ac.id%2flogo.gif&ehk=QNgVEvIPoPy5onsltRgWVw6srCfsiPpBpHr4%2btb7GlM%3d&risl=&pid=ImgRaw&r=0" alt="logo" width="150px">
+
+        <nav>
+            <h3>Navigation</h3>
+            <ul>
+                |
+                <li><a href="">Gambar Mobil dan Audio</a></li>
+                |
+                <li><a href="#video">Video Tokyo Drift</a></li>
+                |
+                <li><a href="#frame">Video Formula Drift</a></li>
+                |
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="img-audio">
+            <figure>
+
+                <picture>
+                    <source srcset="src/image/image2.jpg" media="(min-width: 1000px)" type="image/jpg">
+                    <source srcset="src/image/image3.jpg" media="(max-width: 500px)">
+                    <img src="src/image/image1.jpg" alt="mobil1" width="100%">
+                </picture>
+
+                <figcaption>
+                    <h2>Song : Tokyo Drift</h2> <br><br>
+                    <audio controls>
+                        <source src="./src/audio/Tokyo-DriftMV.mp3" type="audio/mpeg">
+                        <source src="./src/audio/Tokyo-DriftMV.ogg" type="audio/ogg">
+                    </audio> 
+                </figcaption>
+
+            </figure>
+        </div>
+        
+        <div class="video" id="video">
+            <fieldset>
+
+                <legend><h1>Tokyo Drift</h1></legend>
+
+                <video width="100%" muted autoplay loop poster="src/image/image1.jpg">
+                    <source src="./src/video/Tokyo-Drift-Video.mp4" type="video/mp4">
+                </video>
+
+            </fieldset>
+        </div>
+
+        <div class="frame" id="frame">
+            <fieldset>
+                
+                <legend><h1>Formula Drift</h1></legend>
+
+                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/WjaqwRQb1AA?si=CmLXKhlPx3SZ7Lvu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </fieldset>
+        </div>
+    </main>
+
+    <footer>
+        <p>Tombol home</p>
+        <a href="../../home.html"><img src="https://static.vecteezy.com/system/resources/previews/000/366/438/original/home-vector-icon.jpg" alt="home" width="150"></a>
+    </footer>
+</body>
+</html>

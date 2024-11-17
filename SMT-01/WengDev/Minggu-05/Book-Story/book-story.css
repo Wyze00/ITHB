@@ -1,0 +1,15 @@
+div.wrapper {
+    width: 400px;
+    background-color: #ddd;
+    padding: 10px;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+
+div.wrapper h1 {
+    text-align: center;
+}
+
+div.wrapper p {
+    font-size: 18px;
+}

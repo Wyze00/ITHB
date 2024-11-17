@@ -1,0 +1,117 @@
+/* body {
+    background-image: url("../src/food-image-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+body {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Main */
+
+main nav {
+    background-color: gray;
+    margin-bottom: 50px;
+}
+
+main nav ul {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-around;
+
+}
+
+main nav ul li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+main nav ul li a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+/* Content */
+
+main .content {
+    padding: 50px;
+    width: 75%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-image: url("../src/food-image-bg.png");
+    box-sizing: border-box;
+}
+
+main .content .content-header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+
+    h1 {
+        display: inline-block;
+        font-family: 'Sofia';
+        font-size: 2rem;
+    }
+}
+
+main .content .content-header .content-header-nav{
+
+    width: 50%;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        list-style-type: none;
+
+        li {
+            background-color: rgb(247, 217, 180);
+            color: green;
+            span {
+                color: red;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+main .content .content-info {
+    width: 60%;
+    margin-left: 40%;
+}
+
+main .content .content-info p {
+    color: salmon;
+    text-align: justify;
+}
+
+main .content .content-button {
+    width: 100px;
+    padding: 0px 30px;
+    margin: auto;
+    color: white;
+    background-color: rgb(98, 115, 161);
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-top: 75px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: gray;
+    text-align: center
+}
+
+footer p {
+    padding: 5px;
+    font-family: 'Audiowide';
+    font-size: small;
+}

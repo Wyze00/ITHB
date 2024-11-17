@@ -1,0 +1,22 @@
+
+div.wrapper {
+    width: 300px;
+    background-color: #ddd;
+    border: 1px solid black;
+    padding: 15px;
+    transition: transform 3s;
+}
+
+div.wrapper:hover {
+    transform: rotate(360deg);
+}
+
+div.wrapper ol {
+    list-style-type: decimal;
+
+}
+
+div.wrapper ol li {
+    font-size: 1rem;
+    color: #95191a;
+}

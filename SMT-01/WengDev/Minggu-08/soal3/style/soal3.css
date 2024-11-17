@@ -1,0 +1,135 @@
+body {
+    padding:  0;
+    margin: 0;
+    background-color: rgb(243, 243, 243);
+    font-family: sans-serif;
+}
+
+#container {
+    width: 75%;
+    margin: auto;
+}
+
+p,h1,h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    color: gray;
+}
+
+nav {
+    
+    h1 {
+        display: inline;
+        font-size: 3rem;
+    }
+
+    ul {
+        float: right;
+        display: inline-block;
+        
+        li {
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                color: green;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+
+main {
+
+    width: 75%;
+    float: left;
+    margin-right: 100px;
+
+    section {
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    section#home {
+
+        img {
+            width: 150px;
+            float: right;
+            border: 8px solid rgb(255, 255, 255);
+            outline: 5px solid rgb(0, 0, 0);
+            box-shadow: 3px 3px 20px 5px gray;
+            margin: 20px;
+        }
+    }
+
+    section#about {
+
+        aside {
+
+            p {
+                width: 45%;
+                float: left;
+            }
+
+            div.ar {
+                float: right;
+                width: 35%;
+                padding: 20px;
+                border-left: 3px solid rgb(209, 209, 209);
+                margin: 20px;
+                color: gray;
+
+                i {
+                    line-height: 1.1;
+                    word-spacing: 1.3;
+                    margin-bottom: 15px;
+                }
+            }
+
+            cite {
+                display: block;
+                text-align: right;
+            }
+        }
+    }
+
+    section#blog {
+
+        img {
+            float: left;
+            margin: 20px;
+            border: 8px solid rgb(255, 255, 255);
+            outline: 5px solid rgb(0, 0, 0);
+            box-shadow: 3px 3px 20px 5px gray;
+
+        }
+    }
+}
+
+aside {
+    float: right;
+    margin-right:40px;
+    
+    ul li a {
+        color: green;
+        text-decoration: none;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+@font-face {
+    font-family: 'Sofia';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/sofia/v14/8QIHdirahM3j_su5uI0.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }

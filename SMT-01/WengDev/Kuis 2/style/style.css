@@ -1,0 +1,129 @@
+* {
+    padding:  0;
+    margin: 0;
+    font-size: "Sofia";
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(243, 243, 243);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#container {
+    width: 75%;
+    margin: auto;
+}
+
+p {
+    text-indent: 30px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+h1,h2 {
+    margin-bottom: 20px;
+    font-family: "Sofia";
+    text-shadow: 3px 3px 5px gray;
+}
+
+nav {
+    margin-bottom: 50px;
+    
+    h1 {
+        display: inline;
+        font-size: 3rem;
+    }
+
+    ul {
+        display: inline-block;
+        
+        li {
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                color: black;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+
+main {
+
+    section {
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    section#one {
+
+        img {
+            width: 150px;
+            float: right;
+            border: 8px solid rgb(255, 255, 255);
+            border-radius: 15px;
+            outline: 5px solid rgb(0, 0, 0);
+            margin: 20px;
+        }
+    }
+
+    section#two {
+
+        aside {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                flex-grow: 1;
+            }
+
+            div.ar {
+                padding: 30px;
+                border-left: 7px double purple;
+                background-color: rgb(233, 228, 228);
+                margin: 20px;
+            }
+
+            cite {
+                display: block;
+                text-align: right;
+            }
+        }
+    }
+
+    section#three {
+
+        img {
+            float: left;
+            margin: 20px;
+            border: 8px solid rgb(255, 255, 255);
+            border-radius: 15px;
+            outline: 5px solid rgb(0, 0, 0);
+        }
+    }
+}
+
+footer {
+
+    p {
+        margin: 0;
+        font-size: small;
+        font-weight: bolder;
+    }
+}
+
+@font-face {
+    font-family: 'Sofia';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/sofia/v14/8QIHdirahM3j_su5uI0.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }

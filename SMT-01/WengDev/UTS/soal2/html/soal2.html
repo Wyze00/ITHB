@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Soal 2</title>
+    <link rel="stylesheet" href="../css/soal2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+
+    <form action="#">
+
+        <div class="header">
+            <h1>Register Form</h1>
+            <hr>
+        </div>
+
+        <div class="input">
+
+            <div class="container">
+                <label for="text">Your Name : </label>
+                <input type="text" name="text" id="text" placeholder="Your Full Name" required>
+            </div>
+            <br><br>
+    
+            <div class="container">
+                <label for="email">Your Email : </label>
+                <input type="email" name="email" id="email" placeholder="Your Email Adress" required>
+            </div>
+            <br><br>
+    
+            <div class="container">
+                <label for="textarea">Message : </label>
+                <textarea name="textarea" id="textarea" rows="7" placeholder="Your Message To In" required></textarea>
+            </div>
+            <br><br>
+    
+            <div class="container">
+                <label for="option">Subject</label>
+                <select name="option" id="option" required>
+                    <option value="fruits">Fruits</option>
+                    <option value="vegetables">Vegetables</option>
+                    <option value="grain">Grain</option>
+                    <option value="protein">Protein</option>
+                    <option value="dairy">Dairy</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="btn">
+            <span class="span1"></span>
+            <input type="button" name="button" id="button" value="Send" onclick="this.parentNode.parentNode.reset()">
+            <span class="span2"></span>
+        </div>
+
+    </form>
+    
+</body>
+</html>
