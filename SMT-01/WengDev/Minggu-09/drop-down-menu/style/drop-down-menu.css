@@ -1,0 +1,137 @@
+/* body {
+
+    font-family: 'Open Sans', sans-serif; 
+     background: #1d211e;
+    font-size: 22px;
+    line-height: 22px;
+    color: #ffffff;
+    text-align: center;
+
+     nav {
+         margin: 50px 0px;
+         height: 70px;
+         background-color: #e67c1f;
+
+         ul {
+             list-style-type: none;
+             position: relative;
+             top: 25px;
+
+             li {
+                 display: inline-block;
+                 background-color: #e67c1f;
+                 
+                 a {
+                     padding: 15px;
+                     color: white;
+                     text-decoration: none;
+                 }
+             }
+
+             li:hover > ul {
+                 display: inline-block;
+                 
+             }
+
+             ul {
+                 display: none;
+                 position: absolute;
+                 top: 45px;
+                 left: 500px;
+
+
+                 li {
+                     position: relative;
+                     display: block;
+                     background-color: #e67c1f;
+                     width: 160px;
+                     height: 50px;
+                 }
+
+                 ul {
+                     position: absolute;
+                     top: 0;
+                     left: 120px;
+
+                 }
+             }
+         }
+
+         a:hover {
+             background: #000000;
+         }
+    }
+ } */
+
+body {
+    font-family: 'Open Sans',
+    sans-serif;
+    background: #1d211e;
+    font-size: 22px;
+    line-height: 22px;
+    color: #ffffff;
+    text-align: center;
+}
+
+nav {
+    margin: 50px 0;
+    background-color: #e67c1f;
+	height:60px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    background-color: #e67c1f;
+}
+
+nav a {
+    display: block;
+    padding: 0 10px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #000000;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover > ul {
+    display: inline-block;
+}
+
+nav ul ul li {
+    width: 170px;
+    position: relative;
+    display: block;
+}
+
+/*agar sub menu kesamping*/
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 85px;
+}
+
+
+/*li > a::after {
+    content: ' +';
+}
+
+li > a:only-child::after {
+    content: '';
+}
+*/

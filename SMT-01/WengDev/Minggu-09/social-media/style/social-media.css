@@ -1,0 +1,76 @@
+body {
+    background-color: #302c2c;
+}
+
+footer {
+
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    width: 75%;
+    margin: auto;
+
+    section h2 {
+        color: white;
+        font-size: 2rem;
+    }
+
+    section ul {
+        list-style-type: none;
+        padding: 0;
+
+        li a {
+            text-decoration: none;
+            color: #9c8d67;
+            font-size: 1.3rem;
+        }
+    }
+
+    section#sosmed {
+
+        div {
+            display: flex;
+        }
+
+        div div a{
+            display: inline-block;
+            height: 60px;
+            width: 65px;
+            background: url("../src/social.jpg");
+            background-position: -px 0px;
+
+        }
+
+        .facebook a {
+            background-position: -5px 0px;
+        }
+
+        .facebook a:hover {
+            background-position: -5px -63.7px;
+        }
+
+        .linkedin a {
+            background-position: -197px 0px;
+        }
+
+        .linkedin a:hover {
+            background-position: -197px -63.7px;
+        }
+
+        .youtube a {
+            background-position: -516px 0px;   
+        }
+
+        .youtube a:hover {
+            background-position: -516px -63.7px;   
+        }
+
+        .twitter a {
+            background-position: -70px 0px;
+        }
+
+        .twitter a:hover {
+            background-position: -70px -63.7px;
+        }
+    }
+}
