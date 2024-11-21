@@ -1,0 +1,65 @@
+body{
+    background: url("../src/plan-page.jpg");
+}
+
+main {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    gap: 70px;
+    font-family: 'lato',sans-serif;
+    margin-top: 150px;
+    justify-content: space-around;
+
+    section.box {
+        text-align: center;
+        background-color: #262626;
+        border: 5px solid #404040;
+        color: gray;
+        width: 300px;
+        font-weight: bold;
+        scale: 1.1;
+
+        h2 {
+            font-weight: bold;
+            color: white;
+            font-weight: 2.3rem;
+        }
+
+        h1 {
+            color: #26DCC5;
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin: 50px;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            
+            li {
+                margin: 10px;
+
+            }
+        }
+
+        button {
+            padding: 17px 30px;
+            background-color: #26DCC5;
+            color: white;
+            font-size: .9rem;
+            margin-bottom: 5px;
+            margin-top: 30px;
+            transition: scale 0.3s, background-color 0.3s;
+            cursor: pointer;
+            border: 0px;
+        }
+
+        button:hover{
+            scale: 1.1;
+            background-color: rgb(223, 220, 220);
+        }
+    }
+}
