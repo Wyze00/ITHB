@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NathanSebastianTanusubroto_1124037_Modul2_No9 {
+public class Soal9 {
     
     public static void main(String[] args) {
         

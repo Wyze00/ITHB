@@ -2,7 +2,7 @@
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class NathanSebastianTanusubroto_1124037_Modul1_No3 {
+public class Soal3 {
 
     public static void main(String[] args) {
 

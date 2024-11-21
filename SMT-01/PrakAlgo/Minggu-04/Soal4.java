@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class NathanSebastianTanusubroto_1124037_Modul3_Soal4 {
+public class Soal4 {
     
     public static void main(String[] args) {
 

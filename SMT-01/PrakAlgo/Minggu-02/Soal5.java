@@ -3,7 +3,7 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class NathanSebastianTanusubroto_1124037_Modul1_No5 {
+public class Soal5 {
 
     public static void main(String[] args) {
 
