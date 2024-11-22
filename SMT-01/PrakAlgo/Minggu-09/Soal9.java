@@ -5,7 +5,6 @@ public class Soal9 {
     public static void main(String[] args){
   
         Scanner scan = new Scanner(System.in);
-    
         String text = "qwertyuiop\nasdfghjkl\nzxcvbnm";
     
         System.out.println("Masukkan huruf yang ingin dicari");
@@ -20,9 +19,8 @@ public class Soal9 {
         for(int i = 0; i < baris.length; i++){
     
             int index = baris[i].indexOf(huruf);
-      
-            if(index != -1){
-              
+            
+            if(index != -1){  
                 System.out.printf("Baris %d, Huruf ke-%d\n",i+1,index+1);
                 return true;
             }

@@ -9,9 +9,7 @@ public class Soal5 {
         do {
     
             System.out.println("Masukkan [sisi1] [sisi2] [sisi3]");
-      
             checker(scan.nextInt(), scan.nextInt(), scan.nextInt());
-      
             System.out.println("Mau coba lagi ? (true/false)");
           
         } while(scan.nextBoolean());

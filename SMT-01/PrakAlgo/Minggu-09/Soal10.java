@@ -10,14 +10,12 @@ public class Soal10 {
         String nama = "TS_" + randomGen();
     
         System.out.println("Masukkan makanan");
-    
         String makanan = scan.next();
     
         while(!makanan.equals("X")){
     
             harga += tambahHarga(makanan);
             makanan = scan.next();
-          
         }
     
         System.out.printf("%s harus membayar %d\n",nama,harga);

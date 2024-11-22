@@ -13,10 +13,9 @@ public class Soal8 {
         String destinasi1 = scan.next();
         String destinasi2 = scan.next();
     
-        while(!destinasi2.equals("X")){
+        while(!destinasi2.equals("X")){ // Terminasi = "X"
     
             jarak += dest(destinasi1,destinasi2);
-  
             destinasi1 = destinasi2;
             destinasi2 = scan.next();
         }
@@ -24,7 +23,6 @@ public class Soal8 {
         System.out.println("Masukkan pesawat");
     
         int hargaPesawat = getPesawat(scan.next());
-    
         double harga = (Math.ceil(jarak) * hargaPesawat)/3;
     
         System.out.printf("Dengan jarak %.0f km harga yang harus dibayar adalah Rp %.0f0\n", jarak, harga);
@@ -114,9 +112,7 @@ public class Soal8 {
             harga = 600;
         } else if(pesawat.equals("Cessna-Citation-X")){
             harga = 350;
-        } else {
-            harga = 0;
-        }
+        } 
       
         return harga;
     }

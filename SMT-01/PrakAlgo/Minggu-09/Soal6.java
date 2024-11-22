@@ -9,11 +9,8 @@ public class Soal6 {
         do {
     
             System.out.println("Masukkan [x1,y1] [x2,y2]");
-      
-            double d = euclidean(scan.nextDouble(), scan.nextDouble(), scan.nextDouble(), scan.nextDouble());
-      
-            System.out.printf("d = %.2f\n", d);
-      
+            double d = euclidean(scan.nextDouble(), scan.nextDouble(), scan.nextDouble(), scan.nextDouble());   
+            System.out.printf("d = %.2f\n", d); 
             System.out.println("Mau lagi ? (true/false)");
     
         } while(scan.nextBoolean());
