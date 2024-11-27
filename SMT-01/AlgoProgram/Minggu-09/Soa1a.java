@@ -8,8 +8,9 @@ public class Soa1a {
 
         System.out.println("Masukkan [rata-rata] [uts] [uas]");
 
-        System.out.println("NA : " + hitungNA(scan.nextDouble(), scan.nextDouble(), scan.nextDouble()));
-        
+        double NA = hitungNA(scan.nextDouble(), scan.nextDouble(), scan.nextDouble());
+
+        System.out.println("NA : " + NA);
     }
 
     static double hitungNA(double rata, double uts, double uas){
