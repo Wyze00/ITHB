@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NilaiMhs {
+public class TabelMhs {
     int nil1, nil2, nil3 , nil4, nil5, nilUTS, nilUAS;
     double rQuis, nilAkhir;
     char nilMutu;
@@ -61,26 +61,23 @@ public class NilaiMhs {
         Scanner scan = new Scanner(System.in);
                
         // deklarasi
-        NilaiMhs mhs = new NilaiMhs();
-       
+        TabelMhs[] mhs = new TabelMhs[scan.nextInt()];
+    
         // baca data
-        mhs.nil1 = scan.nextInt();
-        mhs.nil2 = scan.nextInt();
-        mhs.nil3 = scan.nextInt();
-        mhs.nil4 = scan.nextInt();
-        mhs.nil5 = scan.nextInt();
 
-
-        // hitung
-        mhs.rQuis = rataQuis(mhs.nil1, mhs.nil2, mhs.nil3, mhs.nil4, mhs.nil5);
-        mhs.nilAkhir = angkaAkhir(mhs.rQuis, mhs.nilUTS, mhs.nilUAS);
-        mhs.nilMutu = nilaiMutu(mhs.nilAkhir);
-               
-        //cetak hasil
-       
-        System.out.println(mhs.rQuis);
-        System.out.println(mhs.nilAkhir);
-        System.out.println(mhs.nilMutu);
+        for (int i = 0; i < mhs.length; i++) {
+            
+            mhs[i].nil1 = scan.nextInt();
+            mhs[i].nil2 = scan.nextInt();
+            mhs[i].nil3 = scan.nextInt();
+            mhs[i].nil4 = scan.nextInt();
+            mhs[i].nil5 = scan.nextInt();
+            mhs[i].nilUTS = scan.nextInt();
+            mhs[i].nilUAS = scan.nextInt();
+            mhs[i].rQuis = rataQuis(mhs[i].nil1, mhs[i].nil2, mhs[i].nil3, mhs[i].nil4, mhs[i].nil5);
+            mhs[i].nilAkhir = angkaAkhir(mhs[i].rQuis, mhs[i].nilUTS, mhs[i].nilUAS);
+            mhs[i].nilMutu = nilaiMutu(mhs[i].nilAkhir);
+            
+        }
     }           
-    int[] quis;
 }
