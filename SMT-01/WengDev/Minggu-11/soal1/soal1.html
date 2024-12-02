@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 1</title>
+    <style>
+        .soal3 {
+            input[type="number"]{
+                width: 50px;
+            }
+
+            input[type="text"]{
+                width: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>Temperature Conversion</h1>
+        <input type="text" id="soal2-text1">
+        <label for="soal2-text1">degree celcius</label><br>
+        <p>equal</p>
+        <input type="text" id="soal2-text2">
+        <label for="soal2-text2">degree fahrenheit</label><br>
+    </section>
+
+    <section class="soal3">
+        <h1>Simple Calculator</h1>
+        <input type="number" id="soal3-number1"> <input type="text" id="soal3-operand" readonly> <input type="number" id="soal3-number2"><span> = </span><input type="number" id="soal3-result" readonly><br>
+        <input type="button" value="Add" class="soal3-button"><input type="button" value="Subtract" class="soal3-button"><input type="button" value="Multiply" class="soal3-button"><input type="button" value="Divide" class="soal3-button">
+    </section>
+
+    <section>
+        <h1>Background Changer</h1>
+        <input type="radio" id="soal4-1" name="warna" value="pink" class="soal4-radio">
+        <label for="soal4-1">Pink</label><br>
+        <input type="radio" id="soal4-2" name="warna" value="lightblue" class="soal4-radio">
+        <label for="soal4-2">Light Blue</label><br>
+        <input type="radio" id="soal4-3" name="warna" value="yellow" class="soal4-radio">
+        <label for="soal4-3">Yellow</label><br>
+        <input type="radio" id="soal4-4" name="warna" value="purple" class="soal4-radio">
+        <label for="soal4-4">Purple</label>
+    </section>
+    
+<script src="sscript/soal1.js" defer></script>
+<script src="sscript/soal2.js" defer></script>
+<script src="sscript/soal3.js" defer></script>
+<script src="sscript/soal4.js" defer></script>
+</body>
+</html>
