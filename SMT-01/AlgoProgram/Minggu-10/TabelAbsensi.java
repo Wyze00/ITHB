@@ -2,9 +2,9 @@ import  java.util.Scanner;
 
 public class TabelAbsensi {
 
-    String NIP, nama;
+    String NIP = "", nama = "";
     int hari[] = new int[7]; 
-    int UPJ;
+    int UPJ= 0;
     double upah[] = new double[4];
 
     static double hitungUpahNormal(int hari[], int UPJ){
@@ -58,12 +58,14 @@ public class TabelAbsensi {
 
         // Input
         System.out.println("Masukkan banyak orang : ");
+
         TabelAbsensi[] pekerja = new TabelAbsensi[scan.nextInt()];
 
         // Logic
 
         for(int i = 0; i<pekerja.length; i++){
 
+            pekerja[i] = new TabelAbsensi();
             pekerja[i].nama = scan.next();
             pekerja[i].NIP = scan.next();
             pekerja[i].UPJ = scan.nextInt();

@@ -67,6 +67,7 @@ public class TabelMhs {
 
         for (int i = 0; i < mhs.length; i++) {
             
+            mhs[i] = new TabelMhs();
             mhs[i].nil1 = scan.nextInt();
             mhs[i].nil2 = scan.nextInt();
             mhs[i].nil3 = scan.nextInt();
