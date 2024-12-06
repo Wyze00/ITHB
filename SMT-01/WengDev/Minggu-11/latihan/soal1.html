@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Javascript 1</title>
+    <style>
+
+        body {
+            font-family: sans-serif;
+            padding-bottom: 200px;
+        }
+        
+        h1 {
+            color: rgb(255, 123, 233);
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="soal1">
+        <h1>Soal 1 "Menampilkan angka 10-20"</h1>
+        <p class="soal1-result"></p>
+    </section>
+
+    <section class="soal2">
+        <h1>Soal 2 "Angka terbesar sampai terkecil"</h1>
+        <input type="button" value="pencet" class="soal2-button">
+        <p class="soal2-result"></p>
+    </section>
+
+    <section class="soal3">
+        <h1>Soal 3 "Menampilkan n*2-1"</h1>
+        <input type="button" value="pencet" class="soal3-button">
+        <p class="soal3-result"></p>
+    </section>
+
+    <section class="soal4">
+        <h1>Soal 4 "Segitiga ajaib"</h1>
+        <input type="button" value="pencet" class="soal4-button">
+        <p class="soal4-result"></p>
+    </section>
+
+    <section class="soal5">
+        <h1>Soal 5 "Luas lingkaran"</h1>
+        <input type="button" value="pencet" class="soal5-button">
+        <p class="soal5-result"></p>
+    </section>
+
+    <section class="soal6">
+        <h1>Soal 6 "Alert box"</h1>
+        <label for="soal6-text">Masukkan input</label>
+        <input type="text" class="soal6-text">
+        <input type="button" value="pencet" class="soal6-button">
+    </section>
+
+    <script>
+        (function soal1(){
+
+            const result = document.querySelector('.soal1-result');
+
+            let str = '';
+
+            for(let i = 10; i<=20; i++){
+                str += `<br>${i}</br>`;
+            }   
+
+            result.innerHTML = str;
+        })(); 
+
+        (function soal2(){
+
+            const result = document.querySelector('.soal2-result');
+            const button = document.querySelector('.soal2-button');
+
+            button.addEventListener('click', () => {
+
+                const angka1 = prompt('Masukkan angka 1');
+                const angka2 = prompt('Masukkan angka 2');
+
+                const temp = numTo(angka1,angka2);
+
+                result.innerHTML = `Hasil : ${temp}`;
+            })
+
+            function numTo(angka1, angka2){
+
+                const max = Math.max(angka1,angka2);
+                const min = Math.min(angka1,angka2);
+
+                let res = '';
+
+                for(let i = max; i>= min; i--){
+                    res += `${i} `;
+                }
+
+                return res;
+            }
+        })(); 
+
+        (function soal3(){
+
+            const result = document.querySelector('.soal3-result');
+            const button = document.querySelector('.soal3-button');
+
+            button.addEventListener('click', () => {
+
+                const angka = prompt('Masukkan N');
+
+                const temp = hitungN(angka);
+
+                result.innerHTML = `Hasil : ${temp}`;
+            })
+
+            function hitungN(n){
+
+                let hasil = 0;
+                let res = '';
+
+                for(let i = 0, j = 1; i<n; i++, j+=2){
+                    hasil += j;
+                    res += `${j}+`
+                }
+
+                return `${res.slice(0,res.length-1)} = ${hasil}`;
+            }
+        })();
+
+        (function soal4(){
+
+            const result = document.querySelector('.soal4-result');
+            const button = document.querySelector('.soal4-button');
+
+            button.addEventListener('click', () => {
+
+                const angka = prompt('Masukkan N');
+                let res = '';
+
+                for(let i = 1; i<=angka; i++){
+
+                    for(let j = 1; j<=i; j++){
+                        res += `${i} `;
+                    }
+
+                    res += '<br>';
+                }
+
+                result.innerHTML = res;
+            })
+        })();
+
+        (function soal5(){
+
+            const result = document.querySelector('.soal5-result');
+            const button = document.querySelector('.soal5-button');
+
+            button.addEventListener('click', () => {
+
+                const PI = Math.PI;
+                const jari = prompt('Masukkan jari - jari');
+
+                result.innerHTML = `Luas Lingkaran : ${PI * jari * jari}`;
+            })
+        })();
+    </script>
+
+    <script src="script/soal6.js" defer></script>
+
+</body>
+</html>
