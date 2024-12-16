@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="yes">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/animation.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:wght@400;700&display=swap"
+    />
+    <title>Animation</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    html,
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px 200px;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(
+          315deg,
+          #ffffff 0%,
+
+          #d7e1ec 74%
+        );
+    }
+
+    h1 {
+        margin-bottom: 60px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 200px;
+    }
+
+    .content p {
+        flex: 1;
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .content img {
+        height: 400px;
+        width: auto;
+        object-fit: contain;
+        border-radius: 20px;
+        animation: animationImg 5s linear alternate infinite;
+    }
+
+    @keyframes animationImg {
+        from {
+            transform: rotate(90deg);
+        }
+
+        to {
+            transform: scaleX(-1);
+        }
+    }
+    
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>CSS Animation</h1>
+
+      <div class="content">
+        <p>
+          blinded by lust, they do not foresee the pains and troubles they are
+          about to experience. What pains and what troubles will be endured by
+          those who have been softened and corrupted by pleasures let them be
+          blinded by desire, they do not provide "
+        </p>
+
+        <img src="../images.jpg" alt="Gunung" />
+      </div>
+    </div>
+  </body>
+</html>
