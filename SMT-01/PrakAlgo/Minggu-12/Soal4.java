@@ -7,12 +7,11 @@ public class Soal4 {
 
   public static void main(String[] args) {
 
-    // System.out.println("Masukkan panjang array : ");
-
+    System.out.println();
     int[] test = new int[100];
 
     for(int i = 0; i<100; i++){
-      test[i] = (int) Math.ceil(Math.random()*300);
+      test[i] = (int) Math.ceil(Math.random()*1000);
     }
     
     int[] res = new int[test.length];
